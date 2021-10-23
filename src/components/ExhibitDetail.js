@@ -6,14 +6,14 @@ import { connect } from 'react-redux';
 const ExhibitDetail = ({ exhibit }) => {
     if(!exhibit){
         return (
-        <div className="col-md-7 text-center">
+        <div className="col-md-5 text-center">
             All Images From Unsplash
         </div>
         )
     }
     return (
-        <div className="col-md-7">
-            <img className="photo" src={exhibit.source} />
+        <div className="col-md-5">
+            <img className="photo img-fluid" src={exhibit.source} />
             <p>
                 Title: {exhibit.title} 
             <br/>
